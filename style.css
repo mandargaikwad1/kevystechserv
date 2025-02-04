@@ -47,6 +47,12 @@ a{
     text-decoration: none;
 }
 
+html, body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
 button{
     cursor: pointer;
     border: none;
@@ -81,6 +87,7 @@ img{
     background: var(--secondary-color);
 }
 header{
+    box-shadow:  0px 4px 2px -4px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -89,6 +96,7 @@ header{
 
 header .navbar{
     display: flex;
+    position: fixed;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +142,6 @@ header{
     height: 50px;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 1000;
 }
 
@@ -148,12 +155,12 @@ header nav a{
 }
 
 a.active{
-    background: #14ff72cb;
+    background:var(--sky-blue-color);
     border-radius: 2px;
 }
 
 a:hover{
-    background: #14ff72cb;
+    background: var(--sky-blue-color);
     border-radius: 2px;
 }
 
@@ -426,6 +433,11 @@ a:hover{
         font-size: 14px;
     }
 }
+
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
 .hero-section{
     min-height: 100vh;
     background: #0171b7;
@@ -644,6 +656,39 @@ a:hover{
 
  }
 
+ .video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-button {
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+  }
+   
+
  /* Contact Us section Styling*/
  .contact-section{
     padding: 50px 0 100px;
@@ -785,7 +830,6 @@ a:hover{
 }
 
 .icon {
-  height: 80px;
   width: auto;
 }
 
