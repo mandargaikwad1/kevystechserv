@@ -922,6 +922,9 @@ p, h2 {
 }
 
 @media only screen and (max-width: 1120px) {
+    
+	.numberCol figure figcaption strong {font-size:30px;}
+	.numberCol figure figcaption small {font-size:15px;}
 	.howWeWork h3 {font-size:16px; margin:50px 0 15px; line-height:26px;}
 	.howWeWork h4 {font-size:26px; margin-bottom:20px;}
 	.howWeWork h4 span {margin-right:5px; font-size:22px;}
@@ -935,6 +938,10 @@ p, h2 {
 }
 
 @media only screen and (max-width: 768px) {
+    .numberCol{
+        padding-bottom: 20px;
+    }
+    .numberCol figure {padding-bottom:25px;}
     .howWeWork {padding:40px 0 140px;}
   .howWeWork .bx-controls-direction {
     position: absolute;
@@ -958,6 +965,9 @@ p, h2 {
 }
 
 @media only screen and (max-width: 480px) {
+    .numberCol{
+        padding: 50px 0;
+    }
     .howWeWork figure { margin:auto;}
     .howWeWork img { margin-left:-55px; max-width:90%;}
 }
@@ -1088,6 +1098,10 @@ p, h2 {
         display: none;
     }
     .service-section .service-list .service-item{
+        width: 100%;
+    }
+    .numberCol{
+        gap: 60px;
         width: 100%;
     }
 
