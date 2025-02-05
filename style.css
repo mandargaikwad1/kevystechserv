@@ -914,8 +914,30 @@ p, h2 {
   color:black;
 }
 
+/*mobile responsive styles*/
+@media (max-width: 768px) {
+    .col-sm-6, .col-xs-12 {
+        flex: 1 1 100%; /* Full-width columns on mobile */
+        text-align: center;
+    }
 
+    figure {
+        padding: 0; /* Remove extra padding for images */
+    }
 
+    h3, h4 {
+        font-size: 1.2rem; /* Adjust heading sizes */
+    }
+
+    ul {
+        padding-left: 20px; /* Adjust list padding */
+    }
+}
+
+/* Scrollbar styling */
+.scrollbar {
+    display: none; /* Hide custom scrollbar on mobile */
+}
 /*responsive media query code for max width:1024px*/
 @media screen and (max-width: 1024px){
     .service-section .service-list{
