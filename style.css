@@ -923,8 +923,8 @@ p, h2 {
 
 @media only screen and (max-width: 1120px) {
     
-	.numberCol figure figcaption strong {font-size:30px;}
-	.numberCol figure figcaption small {font-size:15px;}
+	.stats-section .stat-item{font-size:30px;}
+	.stats-section .stat-item {font-size:15px;}
 	.howWeWork h3 {font-size:16px; margin:50px 0 15px; line-height:26px;}
 	.howWeWork h4 {font-size:26px; margin-bottom:20px;}
 	.howWeWork h4 span {margin-right:5px; font-size:22px;}
@@ -938,10 +938,11 @@ p, h2 {
 }
 
 @media only screen and (max-width: 768px) {
-    .numberCol{
+    .stats-section .stat-item{
         padding-bottom: 20px;
+        flex-direction: column;
     }
-    .numberCol figure {padding-bottom:25px;}
+    .stats-section .stat-item {padding-bottom:25px;}
     .howWeWork {padding:40px 0 140px;}
   .howWeWork .bx-controls-direction {
     position: absolute;
@@ -965,8 +966,9 @@ p, h2 {
 }
 
 @media only screen and (max-width: 480px) {
-    .numberCol{
+    .stats-section .stat-item{
         padding: 50px 0;
+        flex-direction: column;
     }
     .howWeWork figure { margin:auto;}
     .howWeWork img { margin-left:-55px; max-width:90%;}
@@ -1080,6 +1082,10 @@ p, h2 {
     .contact-section .section-content{
         align-items: center;
         flex-direction: column-reverse;
+    }
+    .stats-section .stat-item{
+        align-items: center;
+        flex-direction: column;
     }
 }
 
