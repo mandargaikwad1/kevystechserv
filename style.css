@@ -914,29 +914,52 @@ p, h2 {
   color:black;
 }
 
-/*mobile responsive styles*/
-@media (max-width: 768px) {
-    .col-sm-6, .col-xs-12 {
-        flex: 1 1 100%; /* Full-width columns on mobile */
-        text-align: center;
-    }
-
-    figure {
-        padding: 0; /* Remove extra padding for images */
-    }
-
-    h3, h4 {
-        font-size: 1.2rem; /* Adjust heading sizes */
-    }
-
-    ul {
-        padding-left: 20px; /* Adjust list padding */
-    }
+@media only screen and (max-width: 1280px) {
+    .howWeWork h3 {font-size:16px;}
+	.howWeWork h4 {font-size:34px;}
+	.howWeWork h4 span {margin-right:10px; font-size:28px;}
+	.howWeWork p {font-size:14px; line-height:28px; font-weight:300;}
 }
 
-/* Scrollbar styling */
-.scrollbar {
-    display: none; /* Hide custom scrollbar on mobile */
+@media only screen and (max-width: 1120px) {
+	.howWeWork h3 {font-size:16px; margin:50px 0 15px; line-height:26px;}
+	.howWeWork h4 {font-size:26px; margin-bottom:20px;}
+	.howWeWork h4 span {margin-right:5px; font-size:22px;}
+	.howWeWork p {font-size:14px; line-height:28px; font-weight:300;}
+}
+
+
+@media only screen and (max-width: 990px) {
+	.howWeWork, .client-logo, .awardCol, .csrCol, .service-intro, .serv1col, .serv2col, .howDoc {padding:50px 0;}
+	.howWeWork h3 {margin:0 0 15px;}
+}
+
+@media only screen and (max-width: 768px) {
+    .howWeWork {padding:40px 0 140px;}
+  .howWeWork .bx-controls-direction {
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: auto;
+    bottom: -50px;
+    width: 100%;
+  }
+  .howWeWork .bx-prev {
+    left: 30%;
+    transform: rotate(90deg);
+  }
+  .howWeWork .bx-next {
+    right: 30% !important;
+    transform: rotate(90deg);
+  }
+  .howWeWork figure, .introMap figure {display:block; text-align:center;}
+  .howWeWork p {margin-bottom:40px;}
+	
+}
+
+@media only screen and (max-width: 480px) {
+    .howWeWork figure { margin:auto;}
+    .howWeWork img { margin-left:-55px; max-width:90%;}
 }
 /*responsive media query code for max width:1024px*/
 @media screen and (max-width: 1024px){
