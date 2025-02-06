@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEVYSTECHSERV website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/aos.css">
+    <link rel="stylesheet" href="/flexboxgrid.css">
+</head>
+<body>
+    <!--Header/Navbar-->
+    <header>
+        <nav class="navbar section-content">
+                <div class="logo-img"><img src="images\1logo.png" alt="logo"></div>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+               <li>
+                <a href="#" class="nav-link">Home</a>
+               </li>
+               <li>
+                <a href="#about" class="nav-link">About</a>
+               </li>
+               <li>
+                <a href="#service" class="nav-link">Services</a>
+               </li>
+               <li>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+               </li>
+               <li>
+                <a href="#intro" class="nav-link">Intro</a>
+               </li>
+               <li>
+                <a href="#contact" class="nav-link">Contact</a>
+               </li>
+
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    
+
+
+     <!--Contact Section-->
+     <section class="contact-section reveal" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs">
+                        <p>B-501 kailash Esaplande,Ghatkopar(W),Mumbai-400086</p>
+                    </i>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope">
+                        <p>info@kevystechserv.com</p>
+                    </i>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone">
+                        <p>+91 8591990086</p>
+                    </i>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock">
+                        <p>Monday - Saturday: 11:00 AM - 6:00 PM</p>
+                    </i>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock">
+                        <p>Sunday: Closed</p>
+                    </i>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe">
+                        <p>www.kevystechserv.com</p>
+                    </i>
+                </li>
+            </ul>
+
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="email" placeholder="Your Email" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input" required></textarea>
+                <button class=" submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+        <!--Footer Section-->
+        <footer class="footer-section">
+            <dic class="section-content">
+                <p class="copyright-text">© 2021 Kevys Techserv LLP</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">.</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </dic>
+        </footer>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="aos.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal );
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i=0;i<reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+               
+            }
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- <script src="plugins/ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script> -->
+<!-- <script src="plugins/ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script> -->
+     <script src="plugins/cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+     <script src="js/jquery-columns-plugin.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="plugins/cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.2.3/mmenu.js"></script> -->
+<!-- <script src="js/mmenu-init.js"></script> -->
+     <script src="js/animatedModal.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/mediaCheck-min.js"></script>
+     <script src="js/snavvyeef3.js"></script>
+     <script src="js/jquery.beefup.min.js"></script>
+     <script src="js/maina6f3.js?v=0.7"></script> 
+     <script src="numscroller.js"></script>
+     <script src="plugins/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+
+
+
+
+
+
+
+<script>
+    var width = $("#basic").width();
+    $("#basic .slides").css("width", width + 'px');
+    var $frame  = $('#basic');
+    var $wrap   = $frame.parent();
+    var mapPoint = $('#basic').offset().top;
+    $frame.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        itemSelector: '.slides',
+        smart: 1,
+        activateOn: 'click',
+        mouseDragging: 1,
+        touchDragging: 1,
+        releaseSwing: 1,
+        startAt: 0,
+        scrollBar: $wrap.find('.scrollbar'),
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: 1,
+        clickBar: 1,
+        cycleBy: 'pages',
+        cycleInterval: 6000,
+        pauseOnHover: 1,
+        startPaused: 1
+    });
+    $(window).scroll(function() {
+        if($(window).scrollTop() > mapPoint-600) {
+            $frame.sly('resume');
+        } else {
+            $frame.sly('pause');
+        }
+    });
+</script>
+
+<script>
+  AOS.init();
+</script>
+<script>
+$(document).ready(function(){
+  $('.slider').bxSlider();
+});
+</script>
+
+
+<script>
+    // Adjust margin-top based on navbar height
+    window.addEventListener('load', function() {
+      var navbarHeight = document.querySelector('header .navbar').offsetHeight;
+      document.querySelector('.header').style.marginTop = navbarHeight + 'px';
+    });
+  </script>
+  
+</body>
+</html>
