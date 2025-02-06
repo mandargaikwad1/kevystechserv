@@ -376,7 +376,9 @@ a:hover{
     top: 0;
     animation: runningTime 7s linear 1 forwards;
 }
-
+.navbar  :where(#menu-close-button,#menu-open-button){
+    display: none;
+}
 @keyframes runningTime {
     
     from{width: 0%;}
@@ -434,9 +436,7 @@ a:hover{
     }
 }
 
-.navbar :where(#menu-close-button, #menu-open-button){
-    display: none;
-}
+
 
 .hero-section{
     min-height: 100vh;
@@ -1041,7 +1041,7 @@ p, h2 {
         background: rgba(0, 0, 0, 0.2);
     }
 
-    .navbar:where(#menu-close-button,#menu-open-button){
+    .navbar :where(#menu-close-button,#menu-open-button){
         display: block;
         font-size: var(--font-size-l);
     }
@@ -1052,7 +1052,7 @@ p, h2 {
     }
 
     .navbar #menu-open-button{
-        color: var(--white-color);
+        color: var(--dark-color);
     }
     .navbar .nav-menu{
         display: block;

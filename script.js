@@ -1,6 +1,16 @@
 const navLinks=document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton=document.querySelector("#menu-open-button");
 const menuCloseButton=document.querySelector("#menu-close-button");
+
+menuOpenButton.addEventListener("click",()=>{
+    document.body.classList.toggle("show-mobile-menu");
+});
+
+menuCloseButton.addEventListener("click",()=>menuOpenButton.click());
+
+navLinks.forEach(link=> {
+     link.addEventListener("click",()=>menuOpenButton.click());
+});
 var nextBtn = document.querySelector('.next'),
     prevBtn = document.querySelector('.prev'),
     carousel = document.querySelector('.carousel'),
@@ -64,15 +74,7 @@ function showSlider(type) {
 // Start the initial animation 
 resetTimeAnimation()
 
-menuOpenButton.addEventListener("click",()=>{
-     document.body.classList.toggle("show-mobile-menu");
-});
 
-menuCloseButton.addEventListener("click",()=>menuOpenButton.click());
-
-navLinks.forEach(link=> {
-      link.addEventListener("click",()=>menuOpenButton.click());
-});
 
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
