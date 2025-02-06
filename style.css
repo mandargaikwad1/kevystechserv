@@ -877,24 +877,23 @@ a:hover{
     opacity: 1;
  }
 
- .stats-section {
+ .numberCol {
   background-color: #a6ce39; /* Matching your background */
   padding: 40px 20px;
   text-align: center;        /* Center-align the heading */
 }
 
-.section-title {
+.blockanimation {
   color: black;              /* White text for contrast */
   font-size: 28px;           /* Adjust as needed */
   font-weight: bold;
   margin-bottom: 20px;       /* Space between heading and icons */
 }
 
-.stats-container {
+.row {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  gap: 20px;                 /* Space between stat items */
+  align-items: center;               /* Space between stat items */
 }
 
 .stat-item {
@@ -904,9 +903,7 @@ a:hover{
   gap: 10px;
 }
 
-.icon {
-  width: auto;
-}
+
 
 p, h2 {
   margin: 0;
@@ -914,6 +911,48 @@ p, h2 {
   color:black;
 }
 
+.blockanimation {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .blockanimation
+    {
+        -moz-transition: all 900ms ease-out;
+        -webkit-transition: all 900ms ease-out;
+        -o-transition: all 900ms ease-out;
+        transition: all 900ms ease-out;
+      }
+  .blockanimation{
+    -moz-transition: all 1200ms ease-out;
+    -webkit-transition: all 1200ms ease-out;
+    -o-transition: all 1200ms ease-out;
+    transition: all 1200ms ease-out;
+  }
+  .blockanimation{
+    -moz-transition: all 1200ms ease-out;
+    -webkit-transition: all 1200ms ease-out;
+    -o-transition: all 1200ms ease-out;
+    transition: all 1200ms ease-out;
+  }
+  .blockanimation{
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
 @media only screen and (max-width: 1280px) {
     .howWeWork h3 {font-size:16px;}
 	.howWeWork h4 {font-size:34px;}
@@ -923,8 +962,8 @@ p, h2 {
 
 @media only screen and (max-width: 1120px) {
     
-	.stats-section .stat-item{font-size:30px;}
-	.stats-section .stat-item {font-size:15px;}
+	.stats-section .stat-item .stats-container{font-size:30px;}
+	.stats-section .stat-item .stats-container{font-size:15px;}
 	.howWeWork h3 {font-size:16px; margin:50px 0 15px; line-height:26px;}
 	.howWeWork h4 {font-size:26px; margin-bottom:20px;}
 	.howWeWork h4 span {margin-right:5px; font-size:22px;}
@@ -938,7 +977,7 @@ p, h2 {
 }
 
 @media only screen and (max-width: 768px) {
-    .stats-section .stat-item{
+    .stats-section .stat-item .stats-container{
         padding-bottom: 20px;
         flex-direction: column;
     }
@@ -966,7 +1005,7 @@ p, h2 {
 }
 
 @media only screen and (max-width: 480px) {
-    .stats-section .stat-item{
+    .stats-section .stat-item .stats-container{
         padding: 50px 0;
         flex-direction: column;
     }
@@ -1083,7 +1122,7 @@ p, h2 {
         align-items: center;
         flex-direction: column-reverse;
     }
-    .stats-section .stat-item{
+    .stats-section .stat-item .stats-container{
         align-items: center;
         flex-direction: column;
     }
